@@ -1,5 +1,13 @@
+import { useState } from "react";
+
 function App() {
-  return <div className="App"></div>;
+  const [todo, setTodo] = useState([]);
+
+  return (
+    <main className="App">
+      <header></header>
+    </main>
+  );
 }
 
 export default App;
