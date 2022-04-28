@@ -1,0 +1,45 @@
+.todo__form form{
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  padding: 0.4rem 0.8rem;
+}
+
+.todo__form input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.todo__form input:focus{
+  background-color: transparent;
+}
+
+.todo__form button{
+  border-radius: 2px;
+}
+
+/* Theme */
+
+#dark .todo__form input{
+  color: #fff;
+}
+
+#light .todo__form input{
+  color: black;
+} 
+
+#dark .todo__form form{
+  background-color: var(--dark-desaturated-blue);
+}
+
+#light .todo__form form{
+  background-color:#fff;
+}
+
+#light .todo__form button{
+  color: #fff;
+  background-color: var(--dark-desaturated-blue);
+}

@@ -1,10 +1,19 @@
-import React from 'react'
-import './todoList.css'
+import React from "react";
+import Todo from "../todo/Todo";
 
-const TodoList = () => {
+const TodoList = ({ todos, handleCompleteTodo, handleRemove }) => {
   return (
-    <div>TodoList</div>
-  )
-}
+    <ul>
+      {todos.map((todo) => (
+        <Todo
+          key={todo.id}
+          todo={todo}
+          handleCompleteTodo={handleCompleteTodo}
+          handleRemove={handleRemove}
+        />
+      ))}
+    </ul>
+  );
+};
 
-export default TodoList
+export default TodoList;

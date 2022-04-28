@@ -1,0 +1,41 @@
+.todo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+}
+
+.todo div{
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.todo li{
+  font-size: 1.2rem;
+}
+
+.todo button{
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Theme */
+
+#dark .todo{
+  background-color: var(--dark-desaturated-blue);
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  color: #fff;
+}
+
+#light .todo{
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+#light .todo button{
+  color: black;
+}
